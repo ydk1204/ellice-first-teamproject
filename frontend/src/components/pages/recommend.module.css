@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+  /* display: flex; */
+  justify-content: center;
+}
+
+.headerContainer {
+  position: fixed;
+  min-width: 1700px;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  background-color: #212121;
+  padding-top: 100px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.headerText {
+  padding-left: 300px;
+}
+
+.selectOption {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+
+  margin-right: 305px;
+}
+
+.selectedContents {
+  width: 190px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  border: 1px solid orange;
+  border-radius: 5px;
+}
+
+.viewContainer {
+  display: flex;
+  width: 1903px;
+  min-width: 1700px;
+  padding: 230px 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.scrollContainer {
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.scrollBtn {
+  background-color: transparent;
+  color: white;
+  width: 100px;
+  height: 30px;
+}
+
+.scrollBtn {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.nullBox {
+  width: 100%;
+  padding-top: 70px;
+}
+
+.stopMessage {
+  color: white;
+}
+
+.checkBtn {
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  border: 1.5px solid #ff6f00;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5em;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.checkBtn:hover {
+  background: rgb(255, 249, 225);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 249, 225, 1) 0%,
+    rgba(255, 223, 163, 1) 100%
+  );
+  color: black;
+}
+
+.checkTitle,
+.checkCount {
+  font-size: 14px;
+  padding: 0 7px;
+}
+
+.resultBtn {
+  opacity: 0.5;
+  pointer-events: none;
+}

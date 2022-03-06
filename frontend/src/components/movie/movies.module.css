@@ -1,0 +1,67 @@
+.movieContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  margin: 15px 15px;
+  border-radius: 30px;
+  background: rgb(96, 96, 96);
+  background: linear-gradient(
+    135deg,
+    rgba(96, 96, 96, 0.9) 0%,
+    rgba(33, 33, 33, 1) 100%
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  width: 200px;
+  height: 300px;
+  transition: all 150ms ease-in;
+  color: white;
+}
+
+.movieContainer:hover {
+  transform: scale(1.02);
+  background: rgb(169, 241, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(169, 241, 255, 0.5) 0%,
+    rgba(240, 212, 255, 1) 100%
+  );
+  backdrop-filter: blur(10px);
+  color: black;
+}
+
+.selectedVideo {
+  transform: scale(1.02);
+  background: rgb(169, 241, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(169, 241, 255, 0.5) 0%,
+    rgba(240, 212, 255, 1) 100%
+  );
+  backdrop-filter: blur(10px);
+  color: black;
+}
+
+.notSelected {
+}
+
+.moviePoster {
+  border-radius: 25px;
+  width: 90%;
+  height: 90%;
+}
+
+.movieTitle {
+  width: 70%;
+  height: 10%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  padding-top: 5px;
+  font-size: 15px;
+}
